@@ -1,0 +1,66 @@
+\documentclass{article}
+\input{style.sty}
+\usepackage[utf8]{inputenc}
+\begin{document}
+{
+\centering \title*{\huge \textbf Analysis of Important Data Structures} 
+}
+\section{Singly and Doubly Linked List}
+\subsection{Operators Allowed}
+\begin{itemize}
+\renewcommand{\labelitemi}{$\bullet$}
+    \item Insert at Front
+    \item Insert at Back
+    \item Insert at Position
+    \item Search
+    \item Delete with Node Value Given
+    \item Delete with Position
+    \item Display
+\end{itemize}
+\subsection{C++ Implementation}
+\begin{itemize}
+\renewcommand{\labelitemi}{$\bullet$}
+    \item Singly Linked List Git-Location : DataStructures/source/SinglyLinkedList.cpp
+    \item Double Linked List Git-Location : DataStructures/source/DoublyLinkedList.cpp
+\end{itemize}
+\subsection{Time and Space Complexity Analysis}
+\begin{tabular}{c c c c c c c}
+\hline\hline 
+Method & Time(Avg) & Time(Best) & Time(Worst) & Space(Avg) & Space(Best) & Space(Worst) \\
+\hline
+Insert & O(1) & O(n) & O(n) & constant & constant & constant\\
+Delete & O(n) & O(1) & O(n) & constant & constant & constant \\
+Search & O(n) & O(1) & O(n) & constant & constant & constant \\
+Form-n-List & O(n) & O(n) & O(n) & O(n) & O(n) & O(n) \\
+\hline %inserts single line
+\end{tabular}
+
+\section{Binary Tree Types}
+\begin{itemize}
+\renewcommand{\labelitemi}{$\bullet$}
+    \item \textbf{Full/Proper/Plane/Strictly BT} : A full binary tree (sometimes referred to as a proper or plane binary tree) is a tree in which every node in the tree has either 0 or 2 children.
+    \item \textbf{Complete BT} : A complete binary tree is a binary tree in which every level, except possibly the last, is completely filled, and all nodes are as far left as possible.
+\end{itemize}
+
+\section{Binary Search Tree(BST)}
+\subsection{C++ Implementation}
+\begin{itemize}
+\renewcommand{\labelitemi}{$\bullet$}
+    \item Binary Search Tree Git-Location : DataStructures/source/BinarySearchTree.cpp
+\end{itemize}
+\subsection{Time and Space Complexity Analysis}
+\begin{tabular}{c c c c c c c}
+\hline\hline 
+Method & Time(Avg) & Time(Best) & Time(Worst) & Space(Avg) & Space(Best) & Space(Worst) \\
+\hline
+Insert & O($log_{2}$n) & O(1) & O(n)\textsuperscript{1} & constant & constant & constant\\
+Delete & O($log_{2}$n) & O(1) & O(n)\textsuperscript{1}  & constant & constant & constant \\
+Search & O($log_{2}$n) & O(1) & O(n)\textsuperscript{1} & constant & constant & constant \\
+Form-n-BST & O(n$log_{2}$n) & O(n$log_{2}$n) & O(n)\textsuperscript{1} & O(n) & O(n) & O(n) \\
+\hline
+\end{tabular}
+\begin{itemize}
+\renewcommand{\labelitemi}{$\bullet$}
+    \item note-1 : If the BST is formed in the worst way such that all the elements are either on the right/left of every node (8->9->10).
+\end{itemize} 
+\end{document}
